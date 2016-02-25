@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SMTools</string>
+    <string name="tipPlain">数据(明文):</string>
+    <string name="tipInputPlain">请输入待处理的数据或明文</string>
+    <string name="tipCipher">数据(密文):</string>
+    <string name="tipInputCipher">请输入待处理的数据或密文</string>
+    <string name="tipPubKey">密钥（公钥）:</string>
+    <string name="tipInputPubKey">请输入公钥</string>
+    <string name="tipPriKey">密钥（私钥）:</string>
+    <string name="tipInputPriKey">请输入私钥</string>
+    <string name="tipSigned">签名:</string>
+    <string name="signData">签 名</string>
+    <string name="verifyData">验 签</string>
+    <string name="encryptData">加 密</string>
+    <string name="decryptData">解 密</string>
+    <string name="dataTip">数据:</string>
+    <string name="inputData">请输入待处理的数据</string>
+    <string name="hashResult">HASH结果:</string>
+    <string name="calBtnTip">计 算</string>
+    <string name="result">结果:</string>
+    <string name="key">密钥:</string>
+    <string name="keyInput">请输入密钥</string>
+    <string name="inputSsignedData">请输入签名信息</string>
+    <string name="pubKeyData">公钥</string>
+    <string name="generalKeyPair">生成公私钥对</string>
+    <string name="generalPubKey">生成公钥</string>
+    <string name="versionInfo">版本信息</string>
+    <string name="information">使用说明</string>
+    <string name="version">版本信息</string>
+    <string name="introduction">使用说明</string>
+</resources>

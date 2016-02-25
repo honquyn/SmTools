@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/sm2_sign"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/tv_data_plain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dataTip" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_input_plain_sm2"
+                android:layout_below="@+id/tv_data_plain"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:gravity="left|top"
+                android:minLines="5"
+                android:maxLines="5"
+                android:digits="0123456789abcdefABCDEF"
+                android:textSize="16sp"
+                android:hint="@string/inputData"/>
+            <TextView
+                android:id="@+id/tv_key_signed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_input_plain_sm2"
+                android:text="@string/tipSigned" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_signed_sm2"
+                android:layout_below="@+id/tv_key_signed"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="4"
+                android:maxLines="4"
+                android:textSize="16sp"
+                android:digits="0123456789abcdefABCDEF"
+                android:hint="@string/inputSsignedData"/>
+            <TextView
+                android:id="@+id/tv_key_pub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_signed_sm2"
+                android:text="@string/tipPubKey" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pubkey_sm2"
+                android:layout_below="@+id/tv_key_pub"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="4"
+                android:maxLines="4"
+                android:digits="0123456789abcdefABCDEF"
+                android:textSize="16sp"
+                android:hint="@string/tipInputPubKey"/>
+            <TextView
+                android:id="@+id/tv_key_pri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_pubkey_sm2"
+                android:text="@string/tipPriKey" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_prikey_sm2"
+                android:layout_below="@+id/tv_key_pri"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="2"
+                android:maxLines="2"
+                android:digits="0123456789abcdefABCDEF"
+                android:textSize="16sp"
+                android:hint="@string/tipInputPriKey"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_sign_single"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:text="@string/signData" />
+            <Button
+                android:id="@+id/bt_verify_single"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:text="@string/verifyData"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

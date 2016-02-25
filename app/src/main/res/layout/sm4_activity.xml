@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/sm4"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dataTip" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_input"
+                android:layout_below="@+id/tv_data"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="6"
+                android:maxLines="6"
+                android:textSize="16sp"
+                android:digits="0123456789abcdefABCDEF"
+                android:hint="@string/inputData"/>
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_input"
+                android:text="@string/key" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_key"
+                android:layout_below="@+id/tv_key"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="2"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:digits="0123456789abcdefABCDEF"
+                android:hint="@string/keyInput"/>
+
+            <TextView
+                android:id="@+id/tv_result_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_key"
+                android:layout_marginTop="10dp"
+                android:text="@string/result" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_result"
+                android:singleLine="false"
+                android:minLines="4"
+                android:maxLines="4"
+                android:inputType="none"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/tv_result_tip"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_encrypt"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:text="@string/encryptData"/>
+            <Button
+                android:id="@+id/bt_decrypt"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:text="@string/decryptData"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

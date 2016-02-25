@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/sm_key"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/tv_pri_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipPriKey" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pri_key"
+                android:layout_below="@+id/tv_pri_key"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="2"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:digits="0123456789abcdefABCDEF" />
+            <TextView
+                android:id="@+id/tv_pub_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_pri_key"
+                android:layout_marginTop="10dp"
+                android:text="@string/pubKeyData" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_pub_key_result"
+                android:layout_below="@+id/tv_pub_key"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:maxLines="4"
+                android:textSize="16sp"
+                android:editable="false" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/general_key_pair_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/generalKeyPair"/>
+            <Button
+                android:id="@+id/general_pub_key_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/generalPubKey"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
